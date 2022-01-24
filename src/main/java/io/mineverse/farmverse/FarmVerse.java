@@ -12,6 +12,8 @@ public class FarmVerse extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
+        this.saveDefaultConfig();
+
         getServer().getPluginManager().registerEvents(new ItemCommandListener(), this);
     }
 
