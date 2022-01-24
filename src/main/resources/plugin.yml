@@ -1,6 +1,8 @@
-name: Plugin
-main: dev.alexzvn.plugin.Plugin
+name: FarmVerse
+main: io.mineverse.farmverse.FarmVerse
 
 author: Alexzvn
 descriptions: A simple plugin
 version: 0.0.1
+
+api-version: 1.16

@@ -1,0 +1,9 @@
+item-command:
+  name: "&a&lCommand Excutor"
+  lore: 
+    - "My item"
+  material: STONE
+  custom-data: 0
+  slot: 0
+  command: help
+  operator: true # execute command as admin
