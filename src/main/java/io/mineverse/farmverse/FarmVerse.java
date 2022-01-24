@@ -2,6 +2,8 @@ package io.mineverse.farmverse;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.mineverse.farmverse.listeners.ItemCommandListener;
+
 public class FarmVerse extends JavaPlugin {
 
     protected static FarmVerse instance;
@@ -9,6 +11,8 @@ public class FarmVerse extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        getServer().getPluginManager().registerEvents(new ItemCommandListener(), this);
     }
 
     @Override
