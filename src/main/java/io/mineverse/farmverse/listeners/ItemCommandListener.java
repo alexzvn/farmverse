@@ -28,7 +28,7 @@ public class ItemCommandListener implements Listener {
 
         inv.setItem(slot, ItemExecutor.createButton());
 
-        if (!ItemExecutor.isButton(itemOfPlayer)) {
+        if (!ItemExecutor.isButton(itemOfPlayer) && itemOfPlayer != null) {
             inv.addItem(itemOfPlayer);
         }
     }
